@@ -14,9 +14,9 @@ export default function Card(props) {
     return (
         <div className="card">
             <h2 className='inumber'>{`${props.count+1}/${props.people.length}`}</h2>
-            <h2 className='iname'>{
-                `${props.people[props.count].name.first} ${props.people[props.count].name.last}`}</h2>
-            <p className='iinfo'><b>From: {props.people[props.count].city}</b> </p>
+            <h2 className='iname'>
+            {`${props.people[props.count].name.first} ${props.people[props.count].name.last}`}</h2>
+            <p className='iinfo'><b>From: {`${props.people[props.count].city}, ${props.people[props.count].country}`}</b> </p>
             <p className='iinfo'><b>Job Title: {props.people[props.count].title}</b> </p>
             <p className='iinfo'><b>Employer: {props.people[props.count].employer}</b> </p>
             <br className='iinfo' />

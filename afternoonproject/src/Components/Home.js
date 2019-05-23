@@ -19,12 +19,12 @@ export default class Home extends Component {
         if (this.state.count <= 0) {
             return this.setState({count:0})
         } else {
-        return this.setState({count:this.state.count - 1})
+            return this.setState({count:this.state.count - 1})
         }
     }
     
     next=()=> {
-        if (this.state.count > this.state.people.length ) {
+        if (this.state.count >= this.state.people.length-1 ) {
             return this.setState({count:this.state.count})
         } else {
             return this.setState({count:this.state.count + 1})
